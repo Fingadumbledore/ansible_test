@@ -1,0 +1,7 @@
+---
+- name: "Pi einrichten"
+  hosts: server
+  remote_user: pi
+  gather_facts: false
+  roles:
+    - install_pkg

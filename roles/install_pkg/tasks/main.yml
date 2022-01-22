@@ -1,0 +1,21 @@
+---
+- name: "Install neofetch"
+  apt:
+    name: neofetch
+    state: present
+  become: yes
+
+- name: "Install htop"
+  apt:
+    name: htop
+    state: present
+  become: yes
+
+- name: curl
+  apt:
+    name: curl
+    state: present
+  become: yes
+
+
+      
