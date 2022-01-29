@@ -1,10 +1,6 @@
 [server]
 
-#raspi
-192.168.178.42
-
-
+#IP
 
 [linux:vars]
-
 ansible_user=pi

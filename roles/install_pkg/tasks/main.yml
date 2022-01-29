@@ -17,5 +17,34 @@
     state: present
   become: yes
 
+- name: "Install vim"
+  apt:
+    name: vim
+    state: present
+  become: yes
 
+- name: "Install terminator"
+  apt:
+    name: terminator
+    state: present
+  become: yes 
+
+- name: "Install wget"
+  apt:
+    name: wget
+    state: present
+  become: yes
+
+- name: "Install git"
+  apt:
+    name: git
+    state: present
+  become: yes
+
+- name: "Clone Repo"
+  git: 
+    repo: https://github.com/Fingadumbledore/ansible_test.git
+    dest: /home/pi
+    clone: yes
+    update: yes
       
